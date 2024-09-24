@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #003b5c;
+}
+header {
+  background-color: #6c2c3e;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .call-link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    &:hover {
+      background-color: #ffcc0060;
+      z-index: 2;
+    }
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    i {
+      margin: 0 10px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      &:hover {
+        color: #003b5c;
+      }
+    }
+  }
+  .search-btn {
+    background-color: #ffcc00;
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    &:hover {
+      background-color: #f5de5e;
+    }
+  }
+  nav {
+    
+    .nav-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+     
+      li {
+        padding: 15px 20px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: #cab9b9;
+        }
+      }
+    }
+  }
+}
+main {
+  .title-section {
+    background-image: url(./images/1280px-Massawa_harbour.jpeg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+    }
+  }
+}
