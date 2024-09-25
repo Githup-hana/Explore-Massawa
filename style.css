@@ -2,9 +2,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   color: #003b5c;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
 }
 header {
-  background-color: #6c2c3e;
+  background-color: #358597;
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -18,7 +21,7 @@ header {
     font-size: 1rem;
     position: relative;
     &:hover {
-      background-color: #ffcc0060;
+      text-decoration: underline;
       z-index: 2;
     }
   }
@@ -39,7 +42,7 @@ header {
   .search-btn {
     background-color: #ffcc00;
     cursor: pointer;
-    padding: 8px 15px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -48,41 +51,188 @@ header {
     }
   }
   nav {
-    
     .nav-list {
       list-style: none;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 100px;
-     
+
       li {
         padding: 15px 20px;
-        color: white;
+
         cursor: pointer;
         transition: background-color 0.3s;
         &:hover {
-          background-color: #cab9b9;
+          text-decoration: underline;
+          color: #ffcc00;
+        }
+        a {
+          text-decoration: none;
+          color: white;
         }
       }
     }
   }
 }
-main {
-  .title-section {
-    background-image: url(./images/1280px-Massawa_harbour.jpeg);
-    height: 50vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
+@media (max-width: 768) {
+  .nav-list {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .icon-container {
     justify-content: center;
-    align-items: end;
+  }
+  .title-section h1 {
+    font-size: 2rem;
+  }
+}
+main {
+  section {
+    /* padding: 100px 20px; */
+    margin-top: 30px;
+  }
+  .home-part {
+    padding-top: 0px;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    div{background-color: #ffffff6c; box-shadow: 7px 4px 8px rgba(24, 8, 8, 0.1);}
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+    }
 
     h1 {
+      margin-top: 0px;
       font-size: 3rem;
-      text-align: center;
+
       text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+    }
+    h2,
+    h3 {
+      color: black;
+      font-family: "Playwrite DE Grund", cursive;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
+    }
+    p {
+      font-weight: l;
+    }
+  }
+  .home-intro-text {
+  
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+}
+.about-part {
+  h2 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+  }
+
+  .grid-cotainer-about {background-color: #ffffff6c; box-shadow: 7px 4px 8px rgba(24, 8, 8, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+    div {
+      border: #ffffff6c 2px solid;
+      text-align: center;
+      border-radius: 8px;
+      /* width: 100%;
+      height: 100%; */
+    }
+    img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: #003b5c;
+      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+    }
+    button {
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+.history-part {background-color: #ffffff6c; box-shadow: 7px 4px 18px rgba(24, 8, 8, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px #ffffff6c solid;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  div {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  h2{color: black;font-size: 3rem; text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);}
+
+  button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+.attraction-part{img{width: 20%;}p{color: black;}}
+
+footer {
+  background-color: #6c2c3e;
+  padding-left: 40px;
+  color: wheat;
+  .footer-container {
+    display: flex;
+    gap: 20px;
+  }
+  li {
+    list-style: none;
+    padding-top: 10px;
+    a {
+      color: wheat;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-bottom {
+    p {
+      text-align: center;
+      color: #f4f4f4;
     }
   }
 }
