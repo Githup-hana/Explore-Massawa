@@ -156,8 +156,6 @@ main {
       border: #ffffff6c 2px solid;
       text-align: center;
       border-radius: 8px;
-      /* width: 100%;
-      height: 100%; */
     }
     img {
       width: 100%;
@@ -207,10 +205,13 @@ main {
     font-size: 3rem;
     text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
   }
-  h3{  color: #003b5c;
-    text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);}
+  h3 {
+    color: #003b5c;
+    text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+  }
 
-  button {color: white;
+  button {
+    color: white;
     background-color: #007bff;
     border: none;
     border-radius: 5px;
@@ -220,7 +221,8 @@ main {
     }
   }
 }
-.attraction-part {  padding: 20px;
+.attraction-part {
+  padding: 20px;
   background-color: #f4f4f4;
   .things-to-do-div {
     display: flex;
@@ -239,7 +241,8 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
-  button{margin-top: 10px;
+  button {
+    margin-top: 10px;
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -247,14 +250,87 @@ main {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   button:hover {
-    background-color: #0056b3;}
-    h2{   color: black;
-      font-size: 3rem;
-      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);}
-      h3{font-size: 2rem;  color: #003b5c;
-        text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);}
+    background-color: #0056b3;
+  }
+  h2 {
+    color: black;
+    font-size: 3rem;
+    text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+  }
+  h3 {
+    font-size: 2rem;
+    color: #003b5c;
+    text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+  }
+}
+.Foods-restorant-part {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+
+  margin: 20px 0;
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  p {
+    font-size: 1.1em;
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  li {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    img {
+      width: 50%;
+      object-fit: cover;
+    }
+    div {
+      padding: 15px;
+    }
+  }
+  .fas.fa-star,
+  .far.fa-star {
+    color: #ffcc00;
+  }
+
+  .button-contaner {
+    display: flex;
+flex-direction: column;
+
+    
+    button {
+      color: black
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+   
+      i {
+        color: #007bff;
+      }
+    }
+    .full-width-button {
+      width: 100%; 
+      margin-top: 10px;
+      button{width: 80%;background-color:#007bffb7;}
+  i{color: white;font-size: 20px;}
+  }
+  button:hover {
+    background-color: #007bff;
+  }
+ 
 }
 
 footer {
