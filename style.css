@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 header {
-  background-color: #358597;
+  background-color: #6c2c3e;
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -19,12 +19,12 @@ header {
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    position: relative;
+
     &:hover {
       text-decoration: underline;
-      z-index: 2;
     }
   }
+
   .icon-container {
     display: flex;
     align-items: center;
@@ -172,7 +172,9 @@ main {
     button {
       background-color: #007bff;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      width: 100px;
+      height: 40px;
       cursor: pointer;
       &:hover {
         background-color: #0056b3;
@@ -214,7 +216,9 @@ main {
     color: white;
     background-color: #007bff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
     cursor: pointer;
     &:hover {
       background-color: #0056b3;
@@ -244,7 +248,7 @@ main {
   button {
     margin-top: 10px;
     padding: 10px;
-    background-color: #007bff;
+    background-color:#FFCC00;
     color: white;
     border: none;
     border-radius: 4px;
@@ -306,34 +310,49 @@ main {
 
   .button-contaner {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 
-    
     button {
-      color: black
+      color: black;
       border: none;
       border-radius: 5px;
       padding: 10px 15px;
       margin: 5px;
       cursor: pointer;
-   
+
       i {
         color: #007bff;
       }
     }
     .full-width-button {
-      width: 100%; 
+      width: 100%;
       margin-top: 10px;
-      button{width: 80%;background-color:#007bffb7;}
-  i{color: white;font-size: 20px;}
+      button {
+        width: 80%;
+        background-color: #007bffb7;
+      }
+      i {
+        color: white;
+        font-size: 20px;
+      }
+    }
+    button:hover {
+      background-color: #007bff;
+    }
   }
-  button:hover {
-    background-color: #007bff;
+  .city-cards-container{border: 2px saddlebrown solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 40%;
+    }
   }
- 
+  
+
 }
 
-footer {
+footer {display: flex;flex-direction: column;
   background-color: #6c2c3e;
   padding-left: 40px;
   color: wheat;
@@ -358,4 +377,9 @@ footer {
       color: #f4f4f4;
     }
   }
+  button{margin-top: 10px;background-color:#FFCC00;
+  &:hover{background-color: #ffcc00b6;}}
+  h3{color: white;}
+  button{width: 120px;height: 40px; border: none;border-radius: 6px;}
 }
+
