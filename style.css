@@ -100,13 +100,14 @@ header {
       justify-content: center;
       button {
         display: flex;
-        flex-direction: column;
-        background-color: #ffcc00;
-        height: 30px;
-        width: 60px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 40px;
+        width: 40px;
         cursor: pointer;
         border: none;
-        border-radius: 8px;
+        border-radius: 50px;
         &:hover {
           background-color: #f5de5e;
         }
@@ -115,6 +116,9 @@ header {
   }
   .menu-container:hover nav {
     display: block;
+  }
+  .menu-container:hover button {
+    display: none;
   }
 }
 
@@ -169,21 +173,19 @@ main {
       font-size: 2rem;
       color: black;
       text-align: center;
-      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+      text-shadow: 8px 8px 2px rgba(12, 11, 11, 0.5);
     }
-
     .grid-cotainer-about {
-      background-color: #ffffff6c;
       box-shadow: 7px 4px 8px rgba(24, 8, 8, 0.1);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, auto);
-
       gap: 20px;
       width: 60%;
       margin: 0 auto;
+      padding: 10px 10px;
       div {
-        border: #ffffff6c 2px solid;
+        
         text-align: center;
         border-radius: 8px;
       }
@@ -257,14 +259,16 @@ main {
   }
   .attraction-part {
     padding: 20px;
-    background-color: #f4f4f4;
+
     .things-to-do-div {
       display: flex;
       gap: 20px;
       justify-content: space-between;
+      border: 2px solid #00ffaa50;
     }
     img {
       width: 50%;
+      object-fit: cover;
     }
     p {
       color: black;
@@ -371,6 +375,38 @@ main {
       }
     }
   }
+  .galary-part {
+    h2 {
+      color: black;
+      font-weight: 2rem;
+    }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1200px;
+      border: 2px solid #00ffaa50;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 10px 20px;
+      img {
+        width: 20%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      i {
+        margin-top: 100px;
+        &:hover {
+          color: #ffcc00;
+        }
+      }
+    }
+  }
+
   .cities-section {
     h2 {
       font-size: 2rem;
@@ -379,24 +415,39 @@ main {
 
     .city-cards-container {
       display: flex;
+      flex-wrap: wrap;
       gap: 30px;
-      align-items: center;
+      border: 2px solid #00ffaa50;
+
       width: 60%;
       margin: 0 auto;
       background-color: #fff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
+
       img {
         width: 60%;
         object-fit: cover;
       }
-      div {margin: 0 auto;
+      i {
+        margin-top: 250px;
+        padding-right: 10px;
+        &:hover {
+          color: #ffcc00;
+        }
+      }
+      div {
+        margin: 0 auto;
         background-color: #ffffff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 10px 15px;
         border-radius: 5px;
+        overflow: hidden;
         width: 20%;
-        height: 60%;
+
+        &:hover {
+          transform: translateZ(10px);
+        }
       }
 
       button {
@@ -419,10 +470,14 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #6c2c3e;
-  padding-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: wheat;
   margin-top: 20px;
   .footer-container {
+    display: flex;
+    justify-content: space-between;
+
     display: flex;
     gap: 20px;
   }
@@ -459,23 +514,39 @@ footer {
     border: none;
     border-radius: 6px;
   }
+  nav {
+    margin-right: 0;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: #ffe600;
+      font-weight: bold;
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  main {
+    .nav-list {
+      flex-wrap: wrap;
+    }
+    .things-to-do-div {
+      flex-direction: column;
+    }
+    .about-part {
+      .grid-cotainer-about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+    }
   }
 
-  .grid-container-about {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
-  }
-
-  footer {
-    display: flex;
+  .footer-container {
     flex-direction: column;
   }
 }
