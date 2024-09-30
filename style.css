@@ -260,11 +260,12 @@ main {
   .attraction-part {
     padding: 20px;
 
-    .things-to-do-div {
+    .things-to-do {
       display: flex;
       gap: 20px;
       justify-content: space-between;
-      border: 2px solid #00ffaa50;
+   
+      width: 100%;
     }
     img {
       width: 50%;
@@ -278,6 +279,8 @@ main {
       padding: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
+      width: 23%;
+      &:hover{transform: scale(.9);}
     }
     button {
       margin-top: 10px;
@@ -295,12 +298,12 @@ main {
     h2 {
       color: black;
       font-size: 3rem;
-      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.178);
     }
     h3 {
       font-size: 2rem;
       color: #003b5c;
-      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.5);
+      text-shadow: 8px 8px 4px rgba(12, 11, 11, 0.37);
     }
   }
 
@@ -328,6 +331,7 @@ main {
         margin: 20px 30px;
         border: 1px solid #ddd;
         border-radius: 8px;
+   
         img {
           width: 20%;
           object-fit: cover;
@@ -397,6 +401,7 @@ main {
         margin-bottom: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        &:hover{transform: scale(1.1);}
       }
       i {
         margin-top: 100px;
@@ -424,6 +429,7 @@ main {
       background-color: #fff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
+    
 
       img {
         width: 60%;
@@ -444,10 +450,7 @@ main {
         border-radius: 5px;
         overflow: hidden;
         width: 20%;
-
-        &:hover {
-          transform: translateZ(10px);
-        }
+        &:hover{transform: scale(1.1);}
       }
 
       button {
@@ -530,10 +533,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  
   main {
-    .nav-list {
-      flex-wrap: wrap;
-    }
+   
     .things-to-do-div {
       flex-direction: column;
     }
