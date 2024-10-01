@@ -1,0 +1,72 @@
+.Foods-restorant-part {
+    padding: 20px;
+
+    margin: 20px 0;
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: black;
+      text-align: center;
+    }
+    p {
+      font-size: 1.1em;
+      color: black;
+      font-weight: lighter;
+      text-align: center;
+    }
+    ul {
+      li {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 30px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+   
+        img {
+          width: 20%;
+          object-fit: cover;
+        }
+        div {
+          padding: 15px;
+        }
+      }
+      .fas.fa-star,
+      .far.fa-star {
+        color: #ffcc00;
+      }
+
+      .button-contaner {
+        display: flex;
+        flex-direction: column;
+
+        button {
+          color: black;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 15px;
+          margin: 5px;
+          cursor: pointer;
+
+          i {
+            color: #007bff;
+          }
+        }
+        .full-width-button {
+          width: 100%;
+          margin-top: 10px;
+          button {
+            width: 80%;
+            background-color: #007bffb7;
+          }
+          i {
+            color: white;
+            font-size: 20px;
+          }
+        }
+        button:hover {
+          background-color: #007bff;
+        }
+      }
+    }
+  }
