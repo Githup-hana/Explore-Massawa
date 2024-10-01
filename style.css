@@ -116,6 +116,7 @@ header {
   }
   .menu-container:hover nav {
     display: block;
+    
   }
   .menu-container:hover button {
     display: none;

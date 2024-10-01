@@ -3,6 +3,12 @@
 ### Willkommen auf der Massawa Webseite!  🇪🇷 :smile:
 Massawa ist eine historische Hafenstadt an der Küste Eritreas. Besucher können die zahlreichen Sehenswürdigkeiten erkunden .Die Stadt begeistert mit ihren malerischen Stränden und köstlicher eritreischer Küche.
 
+### Über die Webseite
+*  Meine Webseite bietet touristische Informationen über Massawa. 
+* Sie ermöglicht es den Nutzern, einen Überblick über die Stadt zu erhalten.
+ * sie bietet verschiedene Dienstleistungen an, wie zum Beispiel Tourguides und Unterkunftsmöglichkeiten. 
+ * Außerdem vernetzt sie die Nutzer mit anderen Services, wie Hotels und Restaurants.
+
 
 ### Navigation
 Die Webseite ist in verschiedene Abschnitte unterteilt, die über ein übersichtliches Navigationsmenü erreichbar sind:
